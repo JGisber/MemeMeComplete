@@ -24,33 +24,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     
     // define the text attributes for the Upper and the Buttom text
     let memeTextFormat = TextAttributes()
-    
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//        subscribeToKeyboardNotifications()
-//        topTextField.delegate = self
-//        bottomTextField.delegate = self
-//        originalViewHight = view.frame.origin.y
-//
-//
-//
-//
-//        // Initialize the information of the Meme
-//        if let editImage = editMeme?.originalImage,
-//           let editUpper = editMeme?.upperText,
-//           let editBottom = editMeme?.bottomText {
-//            imageView.image = editImage
-//            topTextField.text = editUpper
-//            bottomTextField.text = editBottom
-//            // In Edit mode we do not disable the upload button
-//            //navigationItem.leftBarButtonItem?.isEnabled = true
-//            enableShare(bool: true)
-//
-//            editMode = true
-//
-//        }
-//
-//    }
+
 	
     
     override func viewDidLoad() {
@@ -171,22 +145,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
         navigationItem.leftBarButtonItem?.isEnabled = bool
     }
     
-    
-//    func hideKeyboardWhenTappedAround() {
-//        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-//        tap.cancelsTouchesInView = false
-//        view.addGestureRecognizer(tap)
-//    }
-//    @objc func dismissKeyboard() {
-//        print("tap around to dismiss keyboard!")
-//        view.endEditing(true)
-//        view.frame.origin.y = self.originalViewHight
-//
-//        if let image = generateMemedImage() {
-//            memedImage = image
-//            enableShare(bool: true)
-//        }
-//    }
+
 	
     // MARK: UITextFieldDelegate methods
     

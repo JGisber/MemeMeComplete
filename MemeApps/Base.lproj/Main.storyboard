@@ -22,6 +22,10 @@
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pbg-Gx-grN">
                                 <rect key="frame" x="0.0" y="729" width="375" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="cZm-5D-HM3"/>
+                                    <constraint firstAttribute="width" constant="375" id="tlu-gy-XaZ"/>
+                                </constraints>
                                 <items>
                                     <barButtonItem style="plain" systemItem="camera" id="Qp0-y6-CzW">
                                         <connections>
@@ -29,16 +33,7 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="k1t-22-m48"/>
-                                    <barButtonItem style="plain" id="SQI-L8-WZS">
-                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="THZ-SG-yr1">
-                                            <rect key="frame" x="310" y="12" width="49" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="album"/>
-                                            <connections>
-                                                <action selector="pickAnImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xqo-1R-N2s"/>
-                                            </connections>
-                                        </button>
-                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="organize" id="SQI-L8-WZS"/>
                                 </items>
                             </toolbar>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" usesAttributedText="YES" allowsEditingTextAttributes="YES" placeholder="upper text" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1yX-c8-XTh">
@@ -72,7 +67,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="6PD-Mi-7xM"/>
                     <connections>
-                        <outlet property="albumButton" destination="THZ-SG-yr1" id="rK8-BW-doB"/>
                         <outlet property="bottomTextField" destination="S36-w9-Eof" id="ALG-Ke-y6t"/>
                         <outlet property="cameraButton" destination="Qp0-y6-CzW" id="bRa-tb-dts"/>
                         <outlet property="imageView" destination="BBK-7E-wAn" id="iyc-rj-VVo"/>
